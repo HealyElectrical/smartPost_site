@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartDrop – Secure Package Receiver</title>
+  <meta name="description" content="SmartDrop is a secure, sensor‑driven package receiver with weight detection, 3 cameras, and an app‑controlled lock." />
+  <meta property="og:title" content="SmartDrop – Secure Package Receiver" />
+  <meta property="og:description" content="Secure deliveries with weight sensing, triple‑camera views, and app‑controlled locking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/hero.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="/assets/favicon.svg" />
+  <style>
+    :root{
+      --bg:#0b1020;--panel:#0f172a;--text:#e5e7eb;--muted:#a5b4fc;--brand:#60a5fa;--accent:#22d3ee;--ok:#34d399;--warn:#f59e0b;
+      --max:1100px;--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b1228 40%,#0a0f1f);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(10,15,31,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .wrap{max-width:var(--max);margin:0 auto;padding:16px 20px}
+    .nav{display:flex;align-items:center;gap:18px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+    .logo-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--accent))}
+    .cta{margin-left:auto}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#081020;font-weight:700;border:none;box-shadow:var(--shadow)}
+    .btn:focus,.btn:hover{transform:translateY(-1px)}
+    .hero{padding:80px 20px}
+    .hero .inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+    .pill{display:inline-flex;gap:10px;align-items:center;padding:6px 12px;border-radius:999px;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.35);color:#c7d2fe;font-size:12px}
+    h1{margin:14px 0 10px;font-size:44px;line-height:1.1}
+    .lead{color:#cbd5e1}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .phone{aspect-ratio:3/4;overflow:hidden}
+    .phone img{width:100%;height:100%;object-fit:cover;display:block}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .tile{padding:16px}
+    .tile h3{margin:0 0 6px;font-size:18px}
+    section{padding:64px 20px}
+    .section-title{font-size:28px;margin:0 0 8px}
+    .muted{color:#9ca3af}
+    .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    .feature{padding:18px}
+    .check{color:var(--ok);margin-right:8px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+    .step{padding:18px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .badge{font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#cbd5e1}
+    .cta-panel{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;align-items:center;padding:22px}
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:28px 20px;color:#9ca3af}
+    @media (max-width:900px){.hero .inner,.cta-panel{grid-template-columns:1fr}.grid,.cols,.steps{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+  <div class="wrap nav">
+    <div class="logo">
+      <img src="assets/logo.png" alt="SmartDrop logo" style="height:36px;" />
+      <span>SmartDrop</span>
+    </div>
+    <nav class="muted" aria-label="Main navigation">
+      <a href="#features">Features</a> · <a href="#how">How it works</a> · 
+      <a href="#specs">Specs</a> · <a href="#contact">Contact</a>
+    </nav>
+    <div class="cta"><a class="btn" href="#contact">Request early access</a></div>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="inner">
+      <div>
+        <span class="pill">Secure · App‑controlled · Camera‑ready</span>
+        <h1>Secure package receiver with weight sensing & triple cameras</h1>
+        <p class="lead">SmartDrop protects deliveries with an app‑controlled door and lock, a calibrated weight sensor, and <strong>three cameras</strong> for complete visibility. Get instant notifications and lock/unlock from your phone.</p>
+        <div class="badges">
+          <span class="badge">Weight sensor (HX711‑based)</span>
+          <span class="badge">3× camera views</span>
+          <span class="badge">App notifications</span>
+          <span class="badge">Remote lock/close</span>
+        </div>
+        <p style="margin-top:18px"><a class="btn" href="#contact">Join the beta</a></p>
+      
+	  <div class="card" style="margin-top:20px;overflow:hidden">
+  <iframe width="100%" height="315"
+    src="https://www.youtube.com/embed/TgMnUEyMeno"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+	  
+	  </div>
+      <div class="card phone">
+        <img src="assets/hero.jpg" alt="SmartDrop app preview and enclosure" />
+      </div>
+    </div>
+    <div class="wrap grid">
+      <div class="card tile">
+        <h3>Weight‑verified delivery</h3>
+        <p class="muted">Detects package placement with a calibrated strain‑gauge sensor, logs weight data, and timestamps every event.</p>
+      </div>
+      <div class="card tile">
+        <h3>Full visual coverage</h3>
+        <p class="muted">Three cameras provide external, interior, and lid‑view angles so you never miss a moment.</p>
+      </div>
+      <div class="card tile">
+        <h3>App‑controlled security</h3>
+        <p class="muted">Lock and close remotely. Receive open/close confirmations and tamper alerts immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2 class="section-title">Key features</h2>
+      <p class="muted">Designed for reliability on Raspberry Pi 4 with robust C++ control software.</p>
+      <div class="cols">
+        <div class="card feature">
+          <h3>Precision sensing</h3>
+          <p><span class="check">✔</span> HX711‑based weight sensing with tare & scale calibration</p>
+          <p><span class="check">✔</span> Threshold logic to confirm genuine deliveries</p>
+        </div>
+        <div class="card feature">
+          <h3>Triple cameras</h3>
+          <p><span class="check">✔</span> External, interior, and overhead views</p>
+          <p><span class="check">✔</span> Low‑latency streaming to app</p>
+        </div>
+        <div class="card feature">
+          <h3>Secure access</h3>
+          <p><span class="check">✔</span> App‑controlled door & locking mechanism</p>
+          <p><span class="check">✔</span> Activity logs and tamper notifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2 class="section-title">How it works</h2>
+      <p class="muted">From drop‑off to confirmation in seconds.</p>
+      <div class="steps">
+        <div class="card step"><strong>1. Detect</strong><br />Weight sensor confirms a package is placed, cameras record snapshots.</div>
+        <div class="card step"><strong>2. Notify</strong><br />Your phone gets an instant alert with weight and images.</div>
+        <div class="card step"><strong>3. Secure</strong><br />Tap to close and lock the door; verify via live view.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs">
+    <div class="wrap">
+      <h2 class="section-title">Tech specs</h2>
+      <div class="cols">
+        <div class="card feature">
+          <h3>Core</h3>
+          <p>Raspberry Pi 4 · C++ control · OpenCV pipeline</p>
+        </div>
+        <div class="card feature">
+          <h3>Sensing</h3>
+          <p>Load cell + HX711 ADC · Tare & scale calibration</p>
+        </div>
+        <div class="card feature">
+          <h3>Security</h3>
+          <p>Motorized door · Locking solenoid/actuator · App commands</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap card cta-panel">
+      <div>
+        <h2 class="section-title">Early access & inquiries</h2>
+        <p class="muted">Want updates or to pilot SmartDrop? Join the list and we’ll reach out.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label>Email<br /><input required name="email" type="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#0b1228;color:#e5e7eb" /></label>
+          <label style="display:block;margin-top:10px">Message<br /><textarea name="message" rows="4" placeholder="Tell us how you’d use SmartDrop" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#0b1228;color:#e5e7eb"></textarea></label>
+          <input type="hidden" name="subject" value="SmartDrop website contact" />
+          <button class="btn" type="submit" style="margin-top:12px">Request access</button>
+        </form>
+        <p class="muted" style="font-size:12px;margin-top:8px">We’ll only use your email to contact you about SmartDrop.</p>
+      </div>
+      <div class="card" style="padding:16px">
+        <h3 style="margin-top:0">Contact</h3>
+        <p class="muted">Email: <a href="mailto:hello@smartdrop.example">hello@smartdrop.example</a></p>
+        <p class="muted">Follow: <a href="#">Twitter</a> · <a href="#">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> SmartDrop. All rights reserved. · Secure package receiver.
+      <span class="muted" style="float:right">Made in Canada</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
