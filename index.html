@@ -8,7 +8,7 @@
   <meta property="og:title" content="SmartPost – Secure Package Receiver" />
   <meta property="og:description" content="Secure deliveries with weight sensing, triple‑camera views, and app‑controlled locking." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/Smart_Post_Assy.png" />
+  <!-- Removed duplicate Smart_Post_Assy.png meta image -->
   <meta name="theme-color" content="#0f172a" />
   <link rel="icon" href="/assets/favicon.svg" />
   <style>
@@ -51,6 +51,22 @@
     .badge{font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#cbd5e1}
     .cta-panel{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;align-items:center;padding:22px}
     footer{border-top:1px solid rgba(255,255,255,.08);padding:28px 20px;color:#9ca3af}
+    /* Center all images and iframes */
+    img, iframe {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Center .phone images too */
+    .phone img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Center video cards */
+    .card iframe {
+      margin-left: auto;
+      margin-right: auto;
+    }
     @media (max-width:900px){.hero .inner,.cta-panel{grid-template-columns:1fr}.grid,.cols,.steps{grid-template-columns:1fr}}
   </style>
 </head>
@@ -76,7 +92,7 @@
     <div class="inner">
       <div>
         <!-- ADDED: Smart_Post_Assy.png as hero visual -->
-        <img src="assets/Smart_Post_Assy.png" alt="SmartPost assembly" style="width:100%;display:block;margin-bottom:32px" />
+        <!-- Removed duplicate Smart_Post_Assy.png image here -->
         <span class="pill">Secure · App‑controlled · Camera‑ready</span>
         <h1>Secure package receiver with weight sensing & triple cameras</h1>
         <p class="lead">SmartPost protects deliveries with an app‑controlled door and lock, a calibrated weight sensor, and <strong>three cameras</strong> for complete visibility. Get instant notifications and lock/unlock from your phone.</p>
@@ -189,8 +205,8 @@
         <h2 class="section-title">Early access & inquiries</h2>
         <p class="muted">Want updates or to pilot SmartPost? Join the list and we’ll reach out.</p>
         <form action="https://formspree.io/f/your-form-id" method="POST">
-          <label>Email<br /><input required name="email" type="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#0b1228;color:#e5e7eb" /></label>
-          <label style="display:block;margin-top:10px">Message<br /><textarea name="message" rows="4" placeholder="Tell us how you’d use SmartPost" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#0b1228;color:#e5e7eb"></textarea></label>
+          <label>Email<br /><input required name="email" type="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#191e32;" /></label>
+          <label style="display:block;margin-top:10px">Message<br /><textarea name="message" rows="4" placeholder="Tell us how you’d use SmartPost" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#191e32;"></textarea></label>
           <input type="hidden" name="subject" value="SmartPost website contact" />
           <button class="btn" type="submit" style="margin-top:12px">Request access</button>
         </form>
