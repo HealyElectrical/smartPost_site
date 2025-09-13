@@ -1,0 +1,1 @@
+## Reviewer Feedback (Request Changes):\n\n- The new video should be placed below the existing video, not above it.\n- The existing image ("hero.png") should be deleted.\n- The new image ("Smart_Post_Assy.png") must be added at the top of the scrollable page, by itself.\n\nPlease address these changes before resubmitting for approval.
